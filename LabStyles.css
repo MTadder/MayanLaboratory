@@ -1,0 +1,27 @@
+html {
+  min-height:100%;
+  position:relative;
+
+  --Text-Color:#FFFFFF;
+  --Text-Font:monospace;
+  
+  --Primary-Color-Dark:#000000;
+  --Primary-Color-Light:#484848;
+  --Primary-Color:#212121;
+  
+  --Secondary-Color-Dark:#0a00b6;
+  --Secondary-Color-Light:#9d46ff;
+  --Secondary-Color:#6200ea;
+}
+
+body {
+  background-color:var(--Primary-Color-Dark);
+  height:100%;
+  border-style:dashed 1px white;
+}
+
+#LabFooter Author {
+  font-family:var(--Text-Font);
+  display:inline; width:5%; height:5%; margin:0; text-align:center;
+  color:var(--Text-Color);
+}
