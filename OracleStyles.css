@@ -1,0 +1,18 @@
+hmtl {
+    width:flex;
+}
+body {
+    background-color:black;
+}
+footer {
+    text-align:center; display:block;
+    color:white; background-color:grey;
+}
+
+footer :visited {
+    color:white;
+    text-decoration:overline underline;
+}
+
+footer :link {text-decoration:overline;}
+footer :hover {color:black;}
