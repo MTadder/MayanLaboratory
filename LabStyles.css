@@ -3,7 +3,7 @@ html {
   padding:100px;
   
   width:flex;
-  height:78%;
+  height:65%;
 
   position:relative;
 
@@ -11,7 +11,8 @@ html {
   --Text-Font:monospace;
 
   --Invalid-Color:#FFFB33;
-  
+  --Granted-Color:#O3DAC6;
+    
   --Primary-Color-Dark:#000000;
   --Primary-Color-Light:#484848;
   --Primary-Color:#212121;
@@ -19,39 +20,57 @@ html {
   --Secondary-Color-Dark:#0a00b6;
   --Secondary-Color-Light:#9d46ff;
   --Secondary-Color:#6200ea;
+    
   border:dashed 1px blue;
 }
 
 body {
   background-color:var(--Primary-Color-Dark);
   height:inherit;
-  border:dashed 1px white;
+  border:dashed 1px transparent;
 }
 
 #Navi {
   display:block; left:10%; right:10%; text-align:center; position:absolute;
   background-color:var(--Primary-Color);
-  border:dashed 5px teal;
 }
 
 #Navi .Linkers a {
   display:inline; font-family:var(--Text-Font); font-size:xx-large; margin:10px;
-  color:var(--Text-Color);
+  color:var(--Text-Color); text-decoration:overline;
 }
 
 #Navi .Linkers a:hover {
   color:var(--Secondary-Color-Light);
 }
 
+#WIPWarning:hover {
+    margin-left:auto; margin-right:auto; width:260px;
+}
+
+#WIPWarning {
+    display:block; text-align:center; margin-left:auto; margin-right:auto;
+    background-color:red; font-size:small; font-family:monospace;
+    color:white; width:90%;
+    -webkit-transition: width 5s ease-in-out;
+    -moz-transition: width 5s ease-in-out;
+    -o-transition: width 5s ease-in-out;
+    transition: width 5s ease-in-out;
+}
+
 #Sauce {
   display:block;
-  text-align:center;
+  text-align:center; text-decoration:overline;
   color:var(--Text-Color);
-  font-family:monospace; font-size:xx-small;
+  font-family:monospace;
+}
+
+#Sauce:hover {
+    color:#9d46ff;
 }
 
 #Sauce:hover:before {
-  content:"/";
+  content:"~/";
 }
 #Sauce:hover:after {
   content:"/";
